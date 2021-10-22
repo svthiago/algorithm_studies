@@ -1,3 +1,6 @@
+# O(n) or O(n * log(n)) 
+# performance improvement for later
+
 def solution(A):
 
     B = list(range(1, len(A)+1))
