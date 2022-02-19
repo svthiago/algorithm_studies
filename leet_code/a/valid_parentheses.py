@@ -1,4 +1,8 @@
+# Runtime: 28 ms, faster than 94.11% of Python3 online submissions for Valid Parentheses.
+# Memory Usage: 14 MB, less than 71.98% of Python3 online submissions for Valid Parentheses.
+
 """
+Test cases
 "(])"
 ")(){}"
 "([)"
