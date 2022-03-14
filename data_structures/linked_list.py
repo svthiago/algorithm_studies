@@ -7,10 +7,10 @@ class Node():
 class LinkedList():
     def __init__(self):
         self.head = None
-        self.lenght = 0
+        self.length = 0
 
     def insert(self, value, index=0):
-        if (index < 0) or (index > self.lenght):
+        if (index < 0) or (index > self.length):
             raise Exception("Index out of range")
 
         itr = self.head
@@ -20,23 +20,21 @@ class LinkedList():
                 aux = self.head
                 self.head = Node(value)
                 self.head.next = aux
-                self.lenght += 1
+                self.length += 1
                 break
             if pos == (index - 1):
                 aux = itr.next
                 itr.next = Node(value)
                 itr.next.next = aux
-                self.lenght += 1
+                self.length += 1
                 break
 
             itr = itr.next
             pos += 1
 
-
     def delete(self, index=0):
-        if (index < 0) or (index > self.lenght):
+        if (index < 0) or (index > self.length):
             raise Exception("Index out of range")
-
 
         itr = self.head
         pos = 0
